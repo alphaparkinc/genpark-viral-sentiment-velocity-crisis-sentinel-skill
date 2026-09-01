@@ -1,0 +1,41 @@
+{
+  "name": "genpark-viral-sentiment-velocity-crisis-sentinel-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Viral sentiment velocity crisis sentinel detecting social mention spikes, brand risk escalations, and auto-synthesizing PR holding statements.",
+  "author": "genpark",
+  "category": "brand-protection",
+  "tags": [
+    "pr-crisis-sentinel",
+    "sentiment-velocity",
+    "brand-monitoring",
+    "crisis-management",
+    "holding-statement"
+  ],
+  "inputs": {
+    "brand_keyword": {
+      "type": "string"
+    },
+    "hourly_mention_spike_ratio": {
+      "type": "number"
+    },
+    "negative_sentiment_ratio_pct": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "crisis_alert_id": {
+      "type": "string"
+    },
+    "viral_escalation_tier": {
+      "type": "string"
+    },
+    "synthesized_holding_statement_text": {
+      "type": "string"
+    },
+    "incident_war_room_portal_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
